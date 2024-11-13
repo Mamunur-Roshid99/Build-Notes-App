@@ -28,6 +28,7 @@ notesContainer.addEventListener("click", (e) => {
         updateStorage();
     }
     else if (e.target.tagName === "p") {
+        notes = document.querySelectorAll(".input-box");
         notes.forEach(nt => {
             nt.onkeyup = function(){
                 updateStorage();
@@ -36,3 +37,10 @@ notesContainer.addEventListener("click", (e) => {
     }
 })
 
+
+document.addEventListener("keydown", event => {
+    if(event.key === "Enter") {
+        document.execCommand("insertLineBreak");
+        event.preventDefault();
+    }
+})
