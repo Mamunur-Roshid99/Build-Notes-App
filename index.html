@@ -11,8 +11,17 @@
     <!-- tailwind css plugin -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
-<body>
+<body class="bg-purple-600">
     
+    <div class="container mt-20 px-14 lg:px-28">
+        <h1 class="flex items-center text-white font-semibold text-3xl tracking-wider mb-6"><img src="images/notes.png" alt="notes" width="60px"> Notes</h1>
+        <button class="btn flex items-center gap-2 text-xs font-medium text-white tracking-wider bg-purple-950 p-3 rounded-full mb-6"><img src="images/edit.png" alt="edit" width="20px">Create Notes</button>
+        <div class="notes-container">
+            <!-- <p contenteditable="true" class="input-box ">
+                <img src="images/delete.png" alt="">
+            </p> -->
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
